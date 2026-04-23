@@ -22,7 +22,7 @@ const navSlide = () => {
 
 // Typing Effect for Subtitle
 const typingEffect = () => {
-    const text = "FRONTEND DEV // BACKEND SYS // CYBER ENTHUSIAST";
+    const text = "FRONTEND DEV // BACKEND SYS // DIGITAL MARKETING // CYBER ENTHUSIAST";
     const speed = 100;
     let i = 0;
     const target = document.querySelector('.typing-text');
