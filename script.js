@@ -1,3 +1,4 @@
+// Mobile Navigation Toggle
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -20,27 +21,48 @@ const navSlide = () => {
     });
 }
 
-// Typing Effect for Subtitle
-const typingEffect = () => {
-    const text = "FRONTEND DEV // BACKEND SYS // DIGITAL MARKETING // CYBER ENTHUSIAST";
-    const speed = 100;
-    let i = 0;
-    const target = document.querySelector('.typing-text');
-    
-    target.innerHTML = '';
-
-    function typeWriter() {
-        if (i < text.length) {
-            target.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
+// Navbar Scroll Effect
+const navbarScroll = () => {
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
-    }
-    
-    // Start typing after a short delay (simulating boot sequence)
-    setTimeout(typeWriter, 1000);
+    });
 }
 
-// Initialize
-navSlide();
-window.onload = typingEffect;
+// Scroll Reveal Animation with Intersection Observer
+const scrollReveal = () => {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const revealOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, revealOptions);
+
+    reveals.forEach(reveal => {
+        revealOnScroll.observe(reveal);
+    });
+}
+
+// Initialize all functions when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    navSlide();
+    navbarScroll();
+    
+    // Trigger scroll reveal after a tiny delay to ensure smooth initial load
+    setTimeout(scrollReveal, 100);
+});

@@ -1,74 +1,71 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO // Faqi</title>
+    <title>Faqi Fairuz • Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
+    <!-- Ultra-modern font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="noise"></div>
+    <!-- Subtle Background Grain -->
+    <div class="bg-noise"></div>
 
-    <!-- HUD Elements -->
-    <div class="hud-top-left">SYS.V.1.0 // ONLINE</div>
-    <div class="hud-top-right">BATT: 98% <i class="fas fa-battery-full"></i></div>
+    <!-- Background Glow -->
+    <div class="bg-glow"></div>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">F.A.Q.I_SYS</div>
-        <ul class="nav-links">
-            <li><a href="#home" data-text="INITIATE">INITIATE</a></li>
-            <li><a href="#about" data-text="DATA_LOG">DATA_LOG</a></li>
-            <li><a href="#skills" data-text="MODULES">MODULES</a></li>
-            <li><a href="#projects" data-text="ARCHIVES">ARCHIVES</a></li>
-            <li><a href="#certificates" data-text="CREDENTIALS">CREDENTIALS</a></li>
-            <li><a href="#contact" data-text="UPLINK">UPLINK</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="container nav-container">
+            <a href="#home" class="logo">Faqi.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <div class="cyber-box">
-                <p class="sys-msg">> SYSTEM.BOOT... SUCCESS</p>
-                <h1 class="glitch" data-text="MUHAMAD FAQI FAIRUZ">MUHAMAD FAQI FAIRUZ</h1>
-                <p class="subtitle typing-text"></p>
-                <a href="#about" class="cyber-btn">ACCESS MAINFRAME <i class="fas fa-chevron-right"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section reveal">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Web Developer</span>
+                <h1 class="hero-title">Hi, I'm Faqi Fairuz.</h1>
+                <p class="hero-subtitle">Building digital products, brands, and experience. Specialized in modern web development with Laravel and MySQL.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section reveal">
         <div class="container">
-            <h2 class="section-title glitch-title" data-text="DATA_LOG // ABOUT">DATA_LOG // ABOUT</h2>
-            <div class="about-content">
-                <div class="about-image-wrapper">
-                    <div class="cyber-frame">
-                        <img src="profilfoto.jpg" alt="Muhamad Faqi Fairuz" id="profile-img">
-                        <div class="target-crosshair"></div>
-                    </div>
+            <p class="section-label">01 / About</p>
+            <h2 class="section-title">A brief intro, who am I?</h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Halo, saya <strong>Muhamad Faqi Fairuz</strong>, siswa <strong>SMKN 1 Ciomas</strong> dengan keahlian utama di bidang <strong>Web Developer</strong> dan <strong>Digital Marketing</strong>.</p>
+                    <p>Saya memiliki minat besar dalam menciptakan antarmuka yang bersih dan interaktif. Saya percaya bahwa desain yang baik tidak hanya tentang tampilan, tetapi juga tentang bagaimana hal tersebut menyelesaikan masalah dan memberikan pengalaman yang mulus bagi pengguna.</p>
+                    <p>Fokus saya adalah terus berinovasi dan membangun solusi yang efisien menggunakan teknologi terbaru.</p>
                 </div>
-                <div class="about-text cyber-terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="header-title">user@faqi:~/about</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p>> Halo, saya <strong class="neon-text">Muhamad Faqi Fairuz</strong>, siswa <strong class="neon-text">SMKN 1 Ciomas</strong> dengan keahlian di bidang <strong class="neon-text">Web Developer</strong> dan <strong class="neon-text">Digital Marketing</strong>.</p>
-                        <p>> Saya memiliki minat besar dalam dunia teknologi, khususnya dalam pembuatan website yang modern serta strategi <strong class="neon-text">Digital Marketing</strong> yang efektif.</p>
-                        <p>> Saya terus mengembangkan kemampuan dalam front-end, back-end, dan pemasaran digital untuk menciptakan solusi yang komprehensif dan inovatif.</p>
-                        <p class="blink-cursor">_</p>
+                <div class="about-image-wrapper">
+                    <div class="image-frame">
+                        <img src="profilfoto.jpg" alt="Muhamad Faqi Fairuz">
                     </div>
                 </div>
             </div>
@@ -76,115 +73,163 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section reveal">
         <div class="container">
-            <h2 class="section-title glitch-title" data-text="SYSTEM_MODULES">SYSTEM_MODULES</h2>
-            <div class="skills-grid">
-                <div class="skill-card cyber-border">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5_CORE</h3>
-                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            <p class="section-label">02 / Skills</p>
+            <h2 class="section-title">My Tech Stack.</h2>
+            
+            <div class="skills-bento">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-laravel"></i>
+                        <h3>Laravel 12</h3>
+                    </div>
+                    <p>Modern PHP framework for robust backends.</p>
                 </div>
-                <div class="skill-card cyber-border">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3_STYLING</h3>
-                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL</h3>
+                    </div>
+                    <p>Relational database management.</p>
                 </div>
-                <div class="skill-card cyber-border">
-                    <i class="fab fa-js"></i>
-                    <h3>JS_LOGIC</h3>
-                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>Dynamic and interactive interfaces.</p>
                 </div>
-                <div class="skill-card cyber-border">
-                    <i class="fas fa-server"></i>
-                    <h3>BACKEND_SYS</h3>
-                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <p>Styling and responsive layouts.</p>
                 </div>
-                <div class="skill-card cyber-border">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>DGT_MARKETING</h3>
-                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>Semantic web structure.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section reveal">
         <div class="container">
-            <h2 class="section-title glitch-title" data-text="ARCHIVES // PROJECTS">ARCHIVES // PROJECTS</h2>
+            <p class="section-label">03 / Selected Works</p>
+            <h2 class="section-title">Featured Projects.</h2>
+            
             <div class="projects-grid">
-                <div class="project-card cyber-border">
+                <!-- Project 1 -->
+                <a href="https://hungrygreenssalad-v2.vercel.app/" target="_blank" class="project-card">
                     <div class="project-img-wrapper">
                         <img src="WebUMKM.png" alt="Hungry Greens Salad" class="project-img">
                     </div>
                     <div class="project-info">
                         <h3>Hungry Greens Salad</h3>
-                        <p>Website pemesanan salad segar dengan antarmuka modern.</p>
-                        <a href="https://hungrygreenssalad-v2.vercel.app/" target="_blank" class="cyber-link">[ VIEW_SOURCE ]</a>
+                        <p>Modern salad ordering interface.</p>
+                        <span class="link-text">Visit Site <i class="fas fa-arrow-up-right-from-square"></i></span>
                     </div>
-                </div>
-                <div class="project-card cyber-border">
-                    <div class="project-img-placeholder">IMG_NA</div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="#" class="project-card">
+                    <div class="project-img-wrapper placeholder-img">
+                        <i class="fas fa-robot"></i>
+                        <img src="ecomerce.png" alt="Ecomerce" class="project-img">
+                    </div>
                     <div class="project-info">
-                        <h3>Bot Telegram</h3>
-                        <p>Sistem otomatisasi dan manajemen grup.</p>
-                        <a href="#" class="cyber-link">[ VIEW_SOURCE ]</a>
+                        <h3>Ecommere -Simple Online Store</h3>
+                        <p>Ecommere is a Laravel-based e-commerce web app for browsing products, viewing details, searching items, and managing a shopping cart in a clean and simple storefront experience.
+
+↗.</p>
+                        <span class="link-text">Visit Site <i class="fas fa-arrow-up-right-from-square"></i></span>
                     </div>
-                </div>
-                <div class="project-card cyber-border">
-                    <div class="project-img-placeholder">IMG_NA</div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#" class="project-card">
+                    <div class="project-img-wrapper placeholder-img">
+                        <i class="fas fa-building"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Company Profile</h3>
-                        <p>Website interaktif untuk perusahaan teknologi.</p>
-                        <a href="#" class="cyber-link">[ VIEW_SOURCE ]</a>
+                        <p>Interactive corporate website.</p>
+                        <span class="link-text">Visit Site <i class="fas fa-arrow-up-right-from-square"></i></span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="certificates-section">
+    <section id="certificates" class="certificates-section reveal">
         <div class="container">
-            <h2 class="section-title glitch-title" data-text="CREDENTIALS">CREDENTIALS</h2>
+            <p class="section-label">04 / Credentials</p>
+            <h2 class="section-title">Certifications.</h2>
+            
             <div class="cert-grid">
-                <div class="cert-card cyber-border">
-                    <img src="sertifikat.png" alt="Sertifikat Pemrograman Web" class="cert-img">
-                    <h3>Dasar Pemrograman Web</h3>
-                    <p>Dicoding - 2025</p>
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <img src="sertifikat.png" alt="Sertifikat Pemrograman Web" class="cert-img">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Dasar Pemrograman Web</h3>
+                        <p>Dicoding, 2025</p>
+                    </div>
                 </div>
-                <div class="cert-card cyber-border">
-                    <img src="sertifikat2.png" alt="Sertifikat Financial Literacy" class="cert-img">
-                    <h3>Financial Literacy</h3>
-                    <p>Dicoding - 2026</p>
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <img src="sertifikat3.png" alt="Sertifikat Financial Literacy" class="cert-img">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Financial Literacy</h3>
+                        <p>Dicoding, 2026</p>
+                    </div>
                 </div>
-                <div class="cert-card cyber-border">
-                    <img src="sertifikat3.png" alt="Sertifikat Master Trainer" class="cert-img">
-                    <h3>Master Trainer 2024</h3>
-                    <p>Google/REFO - 2024</p>
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <img src="sertifikat2.png" alt="Sertifikat Master Trainer" class="cert-img">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Master Trainer 2024</h3>
+                        <p>Google/REFO, 2024</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title glitch-title" data-text="ESTABLISH_UPLINK">ESTABLISH_UPLINK</h2>
-            <div class="contact-content cyber-border">
-                <p>> WAITING FOR TRANSMISSION...</p>
-                <div class="social-links">
-                    <a href="https://github.com/faqifairuz" target="_blank" class="cyber-social"><i class="fab fa-github"></i> GITHUB</a>
-                    <a href="https://instagram.com/mhmdfqifrz" target="_blank" class="cyber-social"><i class="fab fa-instagram"></i> INSTAGRAM</a>
-                    <a href="https://wa.me/6289616392586" target="_blank" class="cyber-social"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
-                </div>
+    <section id="contact" class="contact-section reveal">
+        <div class="container contact-container">
+            <h2 class="contact-title">Let's work together.</h2>
+            <p class="contact-desc">Feel free to reach out for collaborations or just a friendly hello.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/faqifairuz" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://instagram.com/mhmdfqifrz" target="_blank" class="social-btn">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/6289616392586" target="_blank" class="social-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>SYS.DEF. &copy; 2026 // M_FAQI_FAIRUZ // ALL PROTOCOLS OBSERVED.</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Faqi Fairuz. All rights reserved.</p>
+            <p class="footer-design">Designed with simplicity.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
